@@ -10,11 +10,10 @@ Canonical website: https://themabasuitez.com/
 - Development: Maba Suitez
 - Developer: EXSIM MABA Sdn Bhd
 - Location: Jalan Hang Jebat, 50150 Kuala Lumpur, Malaysia
-- Tenure: Leasehold
 - Land area: 1.328 acres
 - Configuration: Two towers, 914 total units
 - Type A: 323 sq ft office suite
-- Type B: 484 sq ft one plus one room, one bathroom
+- Type B: 484sqft 1+1, one bathroom
 - Type C and C(M): 657 sq ft dual-key suite, one room, two bathrooms
 - Parking: 391 car park bays; not included with units
 - Maintenance: RM0.99 per sq ft including sinking fund, based on current supplied material

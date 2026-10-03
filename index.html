@@ -9,8 +9,10 @@
   <meta name="theme-color" content="#07111b">
   <link rel="canonical" href="https://themabasuitez.com/">
   <link rel="preload" href="/assets/images/merdeka-118-skyline.webp" as="image" type="image/webp" fetchpriority="high">
-  <link rel="stylesheet" href="/assets/site-v2.css">
-  <link rel="icon" type="image/png" href="/assets/official/maba-suitez-logo.png">
+  <link rel="preload" href="/assets/fonts/manrope-latin-variable.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/cormorant-garamond-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/assets/site-v3.css">
+  <link rel="icon" type="image/svg+xml" href="/assets/maba-suitez-wordmark.svg">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Maba Suitez">
   <meta property="og:title" content="Maba Suitez KL | Beside Merdeka 118">
@@ -96,11 +98,6 @@
           },
           {
             "@type": "Question",
-            "name": "Is Maba Suitez freehold or leasehold?",
-            "acceptedAnswer": {"@type": "Answer", "text": "The latest supplied project summary identifies the land tenure as leasehold."}
-          },
-          {
-            "@type": "Question",
             "name": "When will Maba Suitez be completed?",
             "acceptedAnswer": {"@type": "Answer", "text": "The current project summary states 60 months from APDL. Purchasers should refer to the final APDL, sale and purchase agreement and developer documents for the binding schedule."}
           }
@@ -115,7 +112,7 @@
   <header class="site-header">
     <nav class="shell nav-shell" aria-label="Primary navigation">
       <a class="brand" href="/" aria-label="Maba Suitez home">
-        <img src="/assets/official/maba-suitez-logo.png" width="640" height="288" alt="Maba Suitez at KL City Centre">
+        <img src="/assets/maba-suitez-wordmark.svg" width="520" height="112" alt="Maba Suitez, KL City Centre">
       </a>
       <button class="nav-toggle" type="button" aria-label="Open navigation" aria-controls="site-nav" aria-expanded="false" data-nav-toggle>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
@@ -137,18 +134,25 @@
   <a class="button mobile-register" href="#register">Register Interest</a>
 
   <main id="main">
-    <section class="shell hero" aria-labelledby="hero-title">
-      <div class="hero-copy" data-reveal>
-        <h1 id="hero-title">Maba Suitez. Own the city’s front row.</h1>
-        <p class="hero-lede">Two towers beside Merdeka 118, shaped for connected city living and flexible ownership.</p>
-        <div class="button-row">
-          <a class="button" href="#register">Register Interest</a>
-          <a class="button button--secondary" href="#latest">Explore the Project</a>
-        </div>
-      </div>
+    <section class="hero" aria-labelledby="hero-title">
       <figure class="hero-media" data-reveal>
         <img src="/assets/images/merdeka-118-skyline.webp" width="1920" height="1280" alt="Menara Merdeka Maybank and Kuala Lumpur skyline near Maba Suitez" fetchpriority="high">
+        <figcaption>Actual Kuala Lumpur city view · Merdeka 118 precinct</figcaption>
       </figure>
+      <div class="hero-copy" data-reveal>
+        <p class="hero-kicker">Jalan Hang Jebat · Kuala Lumpur</p>
+        <h1 id="hero-title">Maba Suitez. <em>At the threshold of Merdeka 118.</em></h1>
+        <p class="hero-lede">A two-tower city address bringing compact suites, hotel-minded shared spaces and direct rail access into one of Kuala Lumpur’s most recognisable precincts.</p>
+        <div class="button-row">
+          <a class="button" href="#register">Register Interest</a>
+          <a class="button button--secondary" href="#latest">View Project Details</a>
+        </div>
+        <dl class="hero-facts" aria-label="Maba Suitez quick facts">
+          <div><dt>Collection</dt><dd>914 suites</dd></div>
+          <div><dt>Connection</dt><dd>About 160m to MRT</dd></div>
+          <div><dt>Layouts</dt><dd>323–657 sq ft</dd></div>
+        </dl>
+      </div>
     </section>
 
     <div class="fact-rail" aria-label="Maba Suitez key facts">
@@ -157,7 +161,6 @@
         <div class="fact"><span>Development</span><strong>Two towers</strong></div>
         <div class="fact"><span>Layouts</span><strong>323 to 657 sq ft</strong></div>
         <div class="fact"><span>MRT Merdeka</span><strong>About 160m</strong></div>
-        <div class="fact"><span>Tenure</span><strong>Leasehold</strong></div>
       </div>
     </div>
 
@@ -174,7 +177,6 @@
             <div><dt>Developer</dt><dd>EXSIM MABA Sdn Bhd</dd></div>
             <div><dt>Land</dt><dd>1.328 acres</dd></div>
             <div><dt>Scale</dt><dd>914 units across two towers</dd></div>
-            <div><dt>Tenure</dt><dd>Leasehold</dd></div>
             <div><dt>Schedule</dt><dd>60 months from APDL</dd></div>
             <div><dt>Maintenance</dt><dd>RM0.99 per sq ft, including sinking fund</dd></div>
           </dl>
@@ -246,12 +248,12 @@
       <div class="shell">
         <div class="section-heading">
           <div data-reveal><p class="eyebrow">Current plan set</p><h2 class="section-title" id="layouts-title">Three footprints. Three ways into the city.</h2></div>
-          <p class="section-copy" data-reveal>Compact office, one plus one, and dual-key configurations are shown in the supplied plan set. All dimensions and room labels are subject to final official documents.</p>
+          <p class="section-copy" data-reveal>Compact office, 1+1 and dual-key configurations are shown in the supplied plan set. All dimensions and room labels are subject to final official documents.</p>
         </div>
         <div class="layout-list">
           <article class="layout-item" data-reveal>
-            <div class="layout-plan"><img src="/assets/official/type-b-484-one-plus-one.webp" width="720" height="646" alt="Type B 484 sq ft one plus one room unit plan" loading="lazy"></div>
-            <div class="layout-copy"><p class="layout-type">Type B</p><h3>484 sq ft one plus one</h3><p class="layout-spec">45 sq m with one bathroom</p><ul><li>Separate bedroom and study</li><li>Open living and dining zone</li><li>Efficient city residence footprint</li></ul></div>
+            <div class="layout-plan"><img src="/assets/official/type-b-484-one-plus-one.webp" width="720" height="646" alt="Type B 484sqft 1+1 unit plan" loading="lazy"></div>
+            <div class="layout-copy"><p class="layout-type">Type B</p><h3>484sqft 1+1</h3><p class="layout-spec">45 sq m with one bathroom</p><ul><li>Separate bedroom and study</li><li>Open living and dining zone</li><li>Efficient city residence footprint</li></ul></div>
           </article>
           <article class="layout-item" data-reveal>
             <div class="layout-plan"><img src="/assets/official/type-a-323-office-suite.webp" width="672" height="642" alt="Type A 323 sq ft office suite plan" loading="lazy"></div>
@@ -343,7 +345,7 @@
             <div class="field field--full"><label for="full_name">Full Name</label><input id="full_name" name="full_name" type="text" autocomplete="name" required placeholder="Your full name"></div>
             <div class="field field--full"><label for="email">Email Address <span>Optional</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com"></div>
             <div class="field field--full"><label for="contact_number">Contact Number <span>WhatsApp enabled</span></label><div class="phone-fields"><select id="country_code" name="country_code" aria-label="Country code" required><option value="+60" selected>MY +60</option><option value="+65">SG +65</option><option value="+62">ID +62</option><option value="+66">TH +66</option><option value="+63">PH +63</option><option value="+84">VN +84</option><option value="+86">CN +86</option><option value="+852">HK +852</option><option value="+886">TW +886</option><option value="+61">AU +61</option><option value="+44">UK +44</option><option value="+1">US/CA +1</option></select><input id="contact_number" name="contact_number" type="tel" inputmode="tel" autocomplete="tel-national" required pattern="[0-9 ]{7,15}" placeholder="12 345 6789"></div></div>
-            <div class="field field--full"><label for="enquiry_for">Enquiry For</label><select id="enquiry_for" name="enquiry_for" required><option value="" selected disabled>Select an enquiry</option><option>Project details and price</option><option>Type A office suite</option><option>Type B one plus one</option><option>Type C dual-key suite</option><option>Facilities and furnishing</option><option>Hospitality management programme</option><option>Preview or appointment</option><option>Other enquiry</option></select></div>
+            <div class="field field--full"><label for="enquiry_for">Enquiry For</label><select id="enquiry_for" name="enquiry_for" required><option value="" selected disabled>Select an enquiry</option><option>Project details and price</option><option>Type A office suite</option><option>Type B 484sqft 1+1</option><option>Type C dual-key suite</option><option>Facilities and furnishing</option><option>Hospitality management programme</option><option>Preview or appointment</option><option>Other enquiry</option></select></div>
           </div>
           <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I agree to be contacted about Maba Suitez and consent to the processing of my information under the <a href="/privacy-policy.html">Privacy Policy</a>.</span></label>
           <button class="button form-submit" type="submit">Register Interest</button>
@@ -356,7 +358,7 @@
   <footer class="site-footer">
     <div class="shell">
       <div class="footer-top">
-        <img class="footer-logo" src="/assets/official/maba-suitez-logo.png" width="640" height="288" alt="Maba Suitez at KL City Centre" loading="lazy">
+        <img class="footer-logo" src="/assets/maba-suitez-wordmark.svg" width="520" height="112" alt="Maba Suitez, KL City Centre" loading="lazy">
         <nav class="footer-links" aria-label="Footer navigation"><a href="/project/">Project</a><a href="/location/">Location</a><a href="/layouts/">Layouts</a><a href="/impressions/">Facilities</a><a href="/merdeka-118/">Merdeka 118</a><a href="/developer/">Developer</a><a href="/register/">Register</a></nav>
       </div>
       <div class="footer-legal">

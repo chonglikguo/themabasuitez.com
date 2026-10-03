@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 112" role="img" aria-labelledby="title desc">
+  <title id="title">Maba Suitez</title>
+  <desc id="desc">Maba Suitez at Kuala Lumpur City Centre</desc>
+  <g fill="#d7c8aa">
+    <text x="4" y="69" font-family="Georgia, 'Times New Roman', serif" font-size="72" font-weight="400" letter-spacing="7">MABA</text>
+    <rect x="284" y="12" width="1" height="82" opacity=".48"/>
+    <text x="308" y="48" font-family="'Trebuchet MS', sans-serif" font-size="27" font-weight="600" letter-spacing="9">SUITEZ</text>
+    <text x="309" y="75" font-family="'Trebuchet MS', sans-serif" font-size="10" font-weight="500" letter-spacing="4.2">KL CITY CENTRE</text>
+  </g>
+  <g transform="translate(252 55)" fill="none" stroke="#d7c8aa" stroke-width="1.6" opacity=".92">
+    <circle r="18"/>
+    <path d="M-18 0h36M0-18c-6 8-6 28 0 36M0-18c6 8 6 28 0 36M-15-10c8 6 22 8 31 1M-16 9c10-6 23-6 32 0"/>
+  </g>
+</svg>
