@@ -1,6 +1,9 @@
 (function () {
   const menuButton = document.querySelector('[data-nav-toggle]');
   const menu = document.querySelector('[data-nav-panel]');
+  function setBackgroundInert(value) {
+    document.querySelectorAll('main, .site-footer').forEach(function (el) { el.inert = value; });
+  }
 
   function closeMenu() {
     if (!menuButton || !menu) return;
@@ -8,6 +11,7 @@
     document.body.classList.remove('menu-open');
     menuButton.setAttribute('aria-expanded', 'false');
     menuButton.setAttribute('aria-label', 'Open navigation');
+    setBackgroundInert(false);
   }
 
   if (menuButton && menu) {
@@ -16,6 +20,7 @@
       document.body.classList.toggle('menu-open', isOpen);
       menuButton.setAttribute('aria-expanded', String(isOpen));
       menuButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      setBackgroundInert(isOpen);
     });
     menu.querySelectorAll('a').forEach(function (link) {
       link.addEventListener('click', closeMenu);
@@ -24,11 +29,29 @@
       if (window.innerWidth >= 1020) closeMenu();
     });
     document.addEventListener('keydown', function (event) {
+      if (event.key === 'Tab' && menu.classList.contains('open')) {
+        const focusable = [menuButton, ...menu.querySelectorAll('a, button')];
+        const first = focusable[0], last = focusable[focusable.length - 1];
+        if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last.focus(); }
+        else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first.focus(); }
+      }
       if (event.key !== 'Escape' || !menu.classList.contains('open')) return;
       closeMenu();
       menuButton.focus();
     });
   }
+
+  const hero = document.querySelector('.hero, .page-hero');
+  const registration = document.querySelector('[data-enquiry-form]');
+  function updateFloatingActions() {
+    document.body.classList.toggle('past-hero', hero ? hero.getBoundingClientRect().bottom <= 96 : window.scrollY > 180);
+    const rect = registration && registration.getBoundingClientRect();
+    document.body.classList.toggle('at-registration', !!rect && rect.top < window.innerHeight && rect.bottom > 0);
+  }
+  window.addEventListener('scroll', updateFloatingActions, { passive: true });
+  window.addEventListener('resize', updateFloatingActions);
+  window.addEventListener('load', updateFloatingActions);
+  updateFloatingActions();
 
   document.querySelectorAll('[data-faq-button]').forEach(function (button) {
     button.addEventListener('click', function () {
