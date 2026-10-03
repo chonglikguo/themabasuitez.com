@@ -1,15 +1,16 @@
 /* Progressive enhancement: all floor-plan content remains available without JS. */
 (function () {
   document.querySelectorAll('.layout-list').forEach(function (list, group) {
-    const panels = Array.from(list.querySelectorAll('.layout-item'));
-    if (panels.length !== 3) return;
+    const items = Array.from(list.querySelectorAll('.layout-item'));
+    if (items.length !== 3) return;
+    const panels = [];
     const labels = ['Type A', 'Type B', 'Type C'];
     const sizes = ['323 sqft', '484 sqft', '657 sqft'];
     const navigation = document.createElement('div');
     navigation.className = 'layout-tabs';
     navigation.setAttribute('role', 'tablist');
     navigation.setAttribute('aria-label', 'Choose a floor plan');
-    const tabs = panels.map(function (panel, index) {
+    const tabs = items.map(function (item, index) {
       const id = 'floor-plan-' + group + '-' + index;
       const tab = document.createElement('button');
       tab.type = 'button';
@@ -18,13 +19,18 @@
       tab.setAttribute('role', 'tab');
       tab.setAttribute('aria-controls', id);
       tab.innerHTML = '<span>' + labels[index] + '</span><small>' + sizes[index] + '</small>';
+      const panel = document.createElement('div');
+      panel.className = 'layout-tabpanel';
       panel.id = id;
       panel.setAttribute('role', 'tabpanel');
       panel.setAttribute('aria-labelledby', tab.id);
       panel.tabIndex = 0;
-      panel.removeAttribute('data-reveal');
-      panel.classList.add('revealed');
-      const image = panel.querySelector('.layout-plan img');
+      item.before(panel);
+      panel.appendChild(item);
+      panels.push(panel);
+      item.removeAttribute('data-reveal');
+      item.classList.add('revealed');
+      const image = item.querySelector('.layout-plan img');
       if (image) {
         const link = document.createElement('a');
         link.className = 'layout-enlarge';
@@ -32,7 +38,7 @@
         link.target = '_blank';
         link.rel = 'noopener';
         link.textContent = 'View ' + labels[index] + ' plan in full size ↗';
-        panel.querySelector('.layout-plan').appendChild(link);
+        item.querySelector('.layout-plan').appendChild(link);
       }
       navigation.appendChild(tab);
       return tab;

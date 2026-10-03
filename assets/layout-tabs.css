@@ -8,7 +8,7 @@
 .layout-tab:focus-visible, .layout-list--tabs .layout-item:focus-visible, .layout-enlarge:focus-visible { outline: 3px solid #986d27; outline-offset: 4px; }
 .layout-list--tabs { border-top: 0; }
 .layout-list--tabs .layout-item { padding: 0 0 2rem; gap: 2rem; align-items: start; }
-.layout-list--tabs .layout-item[hidden] { display: none; }
+.layout-list--tabs .layout-tabpanel[hidden] { display: none; }
 .layout-list--tabs .layout-item .layout-plan, .layout-list--tabs .layout-item .layout-copy { order: initial; }
 .layout-list--tabs .layout-plan { padding: 1.25rem; gap: 1rem; }
 .layout-list--tabs .layout-plan img { width: 100%; height: 350px; max-height: none; object-fit: contain; }
