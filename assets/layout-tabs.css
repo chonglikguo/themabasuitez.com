@@ -1,0 +1,27 @@
+.layout-tabs { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: .5rem; margin-block: 1.5rem 2rem; }
+.layout-tab { display: flex; flex-direction: column; align-items: flex-start; gap: .35rem; padding: 1rem .9rem; min-height: 80px; border: 1px solid var(--line-dark); border-bottom: 3px solid transparent; background: transparent; color: var(--dark-text); cursor: pointer; text-align: left; transition: background 180ms ease, color 180ms ease; }
+.layout-tab span { font-weight: 700; font-size: 1rem; }
+.layout-tab small { font-size: .75rem; font-variant-numeric: tabular-nums; }
+.layout-tab:hover { background: var(--paper-soft); }
+.layout-tab[aria-selected="true"] { background: var(--ink); color: var(--paper); border-color: var(--ink); border-bottom-color: var(--gold); }
+.layout-tab[aria-selected="true"] small { color: var(--gold-light); }
+.layout-tab:focus-visible, .layout-list--tabs .layout-item:focus-visible, .layout-enlarge:focus-visible { outline: 3px solid #986d27; outline-offset: 4px; }
+.layout-list--tabs { border-top: 0; }
+.layout-list--tabs .layout-item { padding: 0 0 2rem; gap: 2rem; align-items: start; }
+.layout-list--tabs .layout-item[hidden] { display: none; }
+.layout-list--tabs .layout-item .layout-plan, .layout-list--tabs .layout-item .layout-copy { order: initial; }
+.layout-list--tabs .layout-plan { padding: 1.25rem; gap: 1rem; }
+.layout-list--tabs .layout-plan img { width: 100%; height: 350px; max-height: none; object-fit: contain; }
+.layout-enlarge { color: var(--dark-text); font-size: .75rem; padding: .5rem; text-underline-offset: .3em; text-align: center; }
+.layout-list--tabs .layout-copy { align-self: center; }
+.layout-list--tabs .layout-copy h2, .layout-list--tabs .layout-copy h3 { font-size: clamp(2.4rem, 5vw, 4.5rem); }
+@media (min-width: 700px) {
+  .layout-tabs { max-width: 680px; gap: 1rem; margin-bottom: 2.5rem; }
+  .layout-tab { padding: 1.1rem 1.5rem; }
+  .layout-tab span { font-size: 1.15rem; }
+  .layout-list--tabs .layout-item { grid-template-columns: minmax(0, 1.25fr) minmax(0, .85fr); gap: clamp(2rem, 6vw, 6rem); }
+  .layout-list--tabs .layout-plan { padding: 2rem; }
+  .layout-list--tabs .layout-plan img { height: 480px; }
+}
+@media (min-width: 1100px) { .layout-list--tabs .layout-plan img { height: 540px; } }
+@media (prefers-reduced-motion: reduce) { .layout-tab { transition: none; } }
