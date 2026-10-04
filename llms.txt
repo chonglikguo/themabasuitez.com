@@ -2,8 +2,8 @@
 
 > Current project information and enquiry website for Maba Suitez on Jalan Hang Jebat, Kuala Lumpur, beside the Merdeka 118 precinct.
 
-Last updated: 2026-10-03
-Canonical website: [Maba Suitez official project information website](https://themabasuitez.com/)
+Last updated: 2026-10-04
+Canonical website: [Maba Suitez official project information website](https://www.mabasuites.com/)
 
 ## Confirmed project summary
 
@@ -27,13 +27,13 @@ Prices, unit availability, rebates, packages, booking terms, APDL details, compl
 
 ## Key pages
 
-- [Project facts](https://themabasuitez.com/project/): Current development facts and project qualifications.
-- [Location and 360 aerial view](https://themabasuitez.com/location/): Project-site context, nearby rail connections and city orientation.
-- [Layout plans](https://themabasuitez.com/layouts/): Type A, Type B and Type C floor-plan information.
-- [Facilities and artist impressions](https://themabasuitez.com/impressions/): Current facility concepts and supplied artist impressions.
-- [Merdeka 118 and 118 Mall guide](https://themabasuitez.com/merdeka-118/): Neighbouring precinct context and official-source references.
-- [Developer](https://themabasuitez.com/developer/): EXSIM MABA Sdn Bhd and the development collaboration.
-- [Register interest](https://themabasuitez.com/register/): Enquiry form and sales-team contact details.
+- [Project facts](https://www.mabasuites.com/project/): Current development facts and project qualifications.
+- [Location and 360 aerial view](https://www.mabasuites.com/location/): Project-site context, nearby rail connections and city orientation.
+- [Layout plans](https://www.mabasuites.com/layouts/): Type A, Type B and Type C floor-plan information.
+- [Facilities and artist impressions](https://www.mabasuites.com/impressions/): Current facility concepts and supplied artist impressions.
+- [Merdeka 118 and 118 Mall guide](https://www.mabasuites.com/merdeka-118/): Neighbouring precinct context and official-source references.
+- [Developer](https://www.mabasuites.com/developer/): EXSIM MABA Sdn Bhd and the development collaboration.
+- [Register interest](https://www.mabasuites.com/register/): Enquiry form and sales-team contact details.
 
 ## Primary external references
 
